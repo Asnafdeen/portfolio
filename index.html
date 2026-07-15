@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Asnafdeen — Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="cursor-dot" id="cursorDot"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<div class="grid-overlay"></div>
+<div class="scanline"></div>
+
+<nav class="navbar">
+  <div class="nav-inner">
+    <div class="nav-logo">asnaf<span>.</span>dev</div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#project">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-toggle" id="navToggle"><span></span><span></span><span></span></div>
+  </div>
+</nav>
+
+<header id="home" class="hero">
+  <div class="hero-inner">
+    <div class="hero-text">
+      <p class="eyebrow">&gt; whoami --student --secure</p>
+      <h1 class="glitch-name" data-text="ASNAFDEEN">ASNAFDEEN</h1>
+      <p class="hero-role">BCA &mdash; Cloud Technology &amp; Information Security</p>
+      <p class="hero-desc">
+        Building secure systems and practical software — from face-recognition
+        attendance automation to cloud-backed applications. Currently learning,
+        breaking, and rebuilding things on Linux, Python, SQL, and the web.
+      </p>
+      <div class="hero-buttons">
+        <a href="#project" class="btn btn-primary">View Projects</a>
+        <a href="asnafdeen_Resume.pdf" class="btn btn-outline" download>View Resume</a>
+        <a href="#contact" class="btn btn-outline">Contact Me</a>
+      </div>
+    </div>
+
+    <div class="hero-photo">
+      <div class="photo-frame">
+        <div class="corner tl"></div>
+        <div class="corner tr"></div>
+        <div class="corner bl"></div>
+        <div class="corner br"></div>
+        <img src="profile.jpg" alt="Asnafdeen" id="profileImg" />
+        <div class="scan-badge">STATUS: ONLINE</div>
+      </div>
+    </div>
+  </div>
+  <div class="scroll-cue"><span></span>scroll</div>
+</header>
+
+<main>
+
+  <section id="about" class="section">
+    <p class="section-tag">About</p>
+    <h2 class="section-title">Who I Am</h2>
+    <div class="about-grid">
+      <p class="about-text">
+        I'm a BCA student specializing in <strong>Cloud Technology and Information Security</strong>,
+        with a hands-on interest in web development, Python scripting, Linux administration,
+        and SQL databases. I like building things that solve real problems &mdash; small, working
+        systems rather than just theory. Currently sharpening my skills in secure application
+        development and cloud-native practices while shipping practical, real-world projects.
+      </p>
+    </div>
+  </section>
+
+  <section id="skills" class="section">
+    <p class="section-tag">Skills</p>
+    <h2 class="section-title">Tech Stack</h2>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <h3>Web Development</h3>
+        <p>HTML, CSS, JavaScript &mdash; building functional, responsive interfaces.</p>
+      </div>
+      <div class="skill-card">
+        <h3>Python</h3>
+        <p>Automation, scripting, and applied machine learning (OpenCV, face recognition).</p>
+      </div>
+      <div class="skill-card">
+        <h3>Linux</h3>
+        <p>Comfortable with the shell, system administration, and Linux-based workflows.</p>
+      </div>
+      <div class="skill-card">
+        <h3>SQL</h3>
+        <p>Designing and querying relational databases for real applications.</p>
+      </div>
+      <div class="skill-card">
+        <h3>Cloud Technology</h3>
+        <p>Core cloud concepts and architecture as part of my specialization.</p>
+      </div>
+      <div class="skill-card">
+        <h3>Information Security</h3>
+        <p>Security fundamentals guiding how I design and build systems.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="project" class="section">
+    <p class="section-tag">Projects</p>
+    <h2 class="section-title">Featured Builds</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <div class="project-header">
+          <span class="project-status">● ACTIVE</span>
+        </div>
+        <h3 class="project-title">Face Recognition Attendance System</h3>
+        <p class="project-desc">
+          A Python-based attendance system that uses real-time face recognition to identify
+          students and automatically mark them present in class. Every entry is logged with
+          the exact date and time, removing manual roll-calls and reducing proxy attendance.
+        </p>
+        <ul class="project-features">
+          <li>Real-time face detection &amp; recognition</li>
+          <li>Automatic attendance marking on match</li>
+          <li>Timestamped logs (date + time) for every entry</li>
+          <li>Built with Python &amp; computer vision libraries</li>
+        </ul>
+        <div class="project-tags">
+          <span>Python</span>
+          <span>OpenCV</span>
+          <span>Face Recognition</span>
+          <span>Automation</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-header">
+          <span class="project-status">● COMPLETE</span>
+        </div>
+        <h3 class="project-title">PAASEA Sustainable Solutions — Company Website</h3>
+        <p class="project-desc">
+          A responsive company website built for PAASEA Sustainable Solutions to showcase its
+          mission, sustainable products, services, and environmental initiatives. Designed an
+          intuitive interface with modern layouts and engaging pages that communicate the
+          organization's commitment to sustainability and innovation.
+        </p>
+        <ul class="project-features">
+          <li>Responsive layout optimized across devices</li>
+          <li>Intuitive, modern UI design</li>
+          <li>Dedicated pages for products, services &amp; initiatives</li>
+          <li>Performance-focused build</li>
+        </ul>
+        <div class="project-tags">
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>JavaScript</span>
+          <span>Responsive Design</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section contact-section">
+    <p class="section-tag">Contact</p>
+    <h2 class="section-title">Let's Connect</h2>
+    <p class="contact-sub">Open to opportunities, internships, and collaborations in cloud &amp; security.</p>
+    <div class="contact-links">
+      <a href="mailto:asnaf231@gmail.com" class="contact-card">
+        <span class="contact-label">Email</span>
+        <span class="contact-value">asnaf231@gmail.com</span>
+      </a>
+      <a href="https://www.linkedin.com/in/asnaf-deen-981a2835a/" target="_blank" rel="noopener" class="contact-card">
+        <span class="contact-label">LinkedIn</span>
+        <span class="contact-value">asnaf-deen</span>
+      </a>
+      <a href="https://github.com/Asnafdeen" target="_blank" rel="noopener" class="contact-card">
+        <span class="contact-label">GitHub</span>
+        <span class="contact-value">Asnafdeen</span>
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>designed &amp; built by Asnafdeen <span>//</span> <span id="year"></span></p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
